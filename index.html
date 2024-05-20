@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Forms</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div class="card">
+        <div class="card-header">
+            <div class="text-header">Registration form</div>
+        </div>
+        <div class="card-body">
+            <form onsubmit="return validateForm()" action="./submit.html">
+                <div class="form-group">
+                    <label for="firstname">First name:</label>
+                    <input required="" name="firstname" id="firstname" type="text">
+                </div>
+                <div class="form-group">
+                    <label for="lastname">Last name:</label>
+                    <input required="" name="lastname" id="lastname" type="text">
+                </div>
+                <div class="form-group">
+                    <label for="Phone">Phone:</label>
+                    <input required="" name="Phone" id="Phone" type="tel" maxlength="10" minlength="10">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input required="" name="password" id="password" type="password" maxlength="15" minlength="8">
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password:</label>
+                    <input required="" name="confirm-password" id="confirm-password" type="password" maxlength="15"
+                        minlength="8">
+                </div>
+                <input type="submit" class="btn" value="submit">
+            </form>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>
